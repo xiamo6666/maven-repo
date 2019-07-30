@@ -43,7 +43,6 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>3.0.0-M1</version>
@@ -52,7 +51,6 @@
                     </altDeploymentRepository>
                 </configuration>
             </plugin>
-
             <!--源码-->
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
@@ -66,7 +64,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <!--github上传插件,用于修改后的发布,执行 mvn clean deploy 自动打包上传到github-->
             <plugin>
                 <groupId>com.github.github</groupId>
@@ -89,7 +86,6 @@
                     <!--github 仓库所有者 不是账号-->
                     <repositoryOwner>xiamo6666</repositoryOwner>
                 </configuration>
-
                 <executions>
                     <execution>
                         <goals>
@@ -99,8 +95,17 @@
                     </execution>
                 </executions>
             </plugin>
-
-
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>maven-repo</id>
+            <url>https://raw.github.com/xiamo6666/maven-repo/master</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+
+    </repositories>
 </project>
