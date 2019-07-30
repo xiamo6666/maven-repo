@@ -41,7 +41,7 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
-                    <message>Maven artifacts for ${project.version}</message>
+                    <message>更新版本${project.version}</message>
                     <noJekyll>true</noJekyll>
                     <!--本地jar地址-->
                     <outputDirectory>${project.build.directory}/repository</outputDirectory>
