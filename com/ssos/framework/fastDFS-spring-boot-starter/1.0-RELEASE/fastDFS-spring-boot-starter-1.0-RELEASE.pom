@@ -8,9 +8,6 @@
         <version>1.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <properties>
-        <github.global.server>github</github.global.server>
-    </properties>
     <artifactId>fastDFS-spring-boot-starter</artifactId>
     <dependencies>
         <!--fast-->
@@ -35,7 +32,9 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-
+    <properties>
+        <github.global.server>github</github.global.server>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -101,6 +100,5 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
-
     </repositories>
 </project>
