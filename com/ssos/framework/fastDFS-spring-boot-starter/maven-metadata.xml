@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ssos.framework</groupId>
+  <artifactId>fastDFS-spring-boot-starter</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190730041234</lastUpdated>
+  </versioning>
+</metadata>
