@@ -32,6 +32,13 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://t.uavebit.com:9092/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
     <properties>
         <github.global.server>github</github.global.server>
     </properties>
