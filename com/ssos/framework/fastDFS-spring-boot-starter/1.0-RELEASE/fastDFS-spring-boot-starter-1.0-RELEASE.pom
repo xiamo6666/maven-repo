@@ -32,13 +32,13 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://t.uavebit.com:9092/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>maven-releases</id>-->
+<!--            <name>maven-releases</name>-->
+<!--            <url>http://t.uavebit.com:9092/repository/maven-public/</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
     <properties>
         <github.global.server>github</github.global.server>
     </properties>
@@ -65,7 +65,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--github上传插件,用于修改后的发布,执行 mvn clean deploy 自动打包上传到github-->
+<!--            github上传插件,用于修改后的发布,执行 mvn clean deploy 自动打包上传到github-->
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
@@ -98,14 +98,4 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>maven-repo</id>
-            <url>https://raw.github.com/xiamo6666/maven-repo/master</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>
